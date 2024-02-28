@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gabunginfrontend/constant/img_string.dart';
 import 'package:gabunginfrontend/pages/components/MyButton.dart';
 import 'package:gabunginfrontend/pages/register.dart';
 import 'package:gabunginfrontend/pages/resep.dart';
@@ -44,7 +45,7 @@ class loginpage extends StatelessWidget {
                   const SizedBox(height: 40),
                   // Logo NutriZoom
                   const Image(
-                    image: AssetImage('lib/images/logonutri.png'),
+                    image: AssetImage(tLogo),
                     width: 200,
                     height: 142.49,
                   ),
