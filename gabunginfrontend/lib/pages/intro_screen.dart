@@ -51,12 +51,12 @@ class _IntroScreenState extends State<IntroScreen> {
               children: [
                 //skip
                 GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => loginpage()),
-                    );
-                  },
+                      onTap: () {
+                        Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => loginpage()), // TOMBOL SEMENTARA
+                        );
+                      },
                   child: Text("Skip"),
                 ),
 
