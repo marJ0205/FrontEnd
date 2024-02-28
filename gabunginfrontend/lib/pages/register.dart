@@ -69,20 +69,14 @@ class _RegisterPageState extends State<RegisterPage> {
                   const SizedBox(height: 20),
                   Text(
                     'DAFTAR',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
-                      fontSize: 20,
-                    ),
+                    style: Theme.of(context).textTheme.headline1
                   ),
                   const SizedBox(height: 30),
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Text(
                       'E-mail',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
+                      style: Theme.of(context).textTheme.bodyText1,
                     ),
                   ),
                   const SizedBox(height: 5),
@@ -98,9 +92,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     alignment: Alignment.centerLeft,
                     child: Text(
                       'Nama',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
+                      style: Theme.of(context).textTheme.bodyText1,
                     ),
                   ),
                   const SizedBox(height: 5),
@@ -116,9 +108,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     alignment: Alignment.centerLeft,
                     child: Text(
                       'Tanggal Lahir',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
+                      style: Theme.of(context).textTheme.bodyText1,
                     ),
                   ),
                   const SizedBox(height: 5),
@@ -139,9 +129,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     alignment: Alignment.centerLeft,
                     child: Text(
                       'Username',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
+                      style: Theme.of(context).textTheme.bodyText1,
                     ),
                   ),
                   const SizedBox(height: 5),
@@ -157,9 +145,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     alignment: Alignment.centerLeft,
                     child: Text(
                       'Kata Sandi',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
+                      style: Theme.of(context).textTheme.bodyText1,
                     ),
                   ),
                   const SizedBox(height: 5),

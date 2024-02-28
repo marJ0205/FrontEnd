@@ -53,11 +53,12 @@ class loginpage extends StatelessWidget {
                   // Solusi Nutrisimu
                   Text(
                     'MASUK',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
-                      fontSize: 20,
-                    ),
+                    style: Theme.of(context).textTheme.headline2
+                    // TextStyle(
+                    //   fontWeight: FontWeight.bold,
+                    //   color: Colors.black,
+                    //   fontSize: 20,
+                    // ),
                   ),
                   const SizedBox(height: 30),
                   // Username or Email
@@ -65,7 +66,7 @@ class loginpage extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: Text(
                       'Username / E-mail',
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: Theme.of(context).textTheme.bodyText1,
                     ),
                   ),
                   const SizedBox(height: 20),
@@ -83,7 +84,7 @@ class loginpage extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: Text(
                       'Kata Sandi',
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: Theme.of(context).textTheme.bodyText1,
                     ),
                   ),
                   const SizedBox(height: 20),
