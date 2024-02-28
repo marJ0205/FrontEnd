@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gabunginfrontend/pages/hasil_bahan.dart';
 import 'package:gabunginfrontend/pages/intro_screen.dart';
 import 'package:gabunginfrontend/pages/tapBar_search.dart';
 // import 'package:nutrizoom_apps/pages/tapBar_search.dart';
@@ -128,6 +129,6 @@ class MyApp extends StatelessWidget {
               fontWeight: FontWeight.bold),
 
         )),
-        home: IntroScreen());
+        home: HasilBahan(judul_bahan: "Bawang",));
   }
 }
