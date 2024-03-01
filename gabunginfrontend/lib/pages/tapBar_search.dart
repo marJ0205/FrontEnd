@@ -113,7 +113,7 @@ class _TapBarState extends State<TapBar>
                   child: TabBarView(
                     controller: tabController,
                     children: [
-                      SearchBahan(),
+                      search_bahan(),
                       SearchNutrisi()
                     ]
                   ),
