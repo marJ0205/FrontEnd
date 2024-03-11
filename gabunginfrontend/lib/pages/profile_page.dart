@@ -1,14 +1,34 @@
+// import 'package:bagianjosh/constants/img_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:gabunginfrontend/constant/img_string.dart';
+// import 'package:gabunginfrontend/constants/img_strings.dart';
+import 'package:gabunginfrontend/pages/login.dart';
+import 'package:gabunginfrontend/pages/utility/sharedPreferences.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+// import 'package:gabunginfrontend/constant/img_string.dart';
 
 class ProfilePage extends StatefulWidget {
-  const ProfilePage({super.key});
+  const ProfilePage({Key? key}) : super(key: key);
 
   @override
   State<ProfilePage> createState() => _ProfilePageState();
 }
 
 class _ProfilePageState extends State<ProfilePage> {
+  String? _token;
+
+  @override
+  void initState() {
+    super.initState();
+    checkLoginStatus(context).then((token) {
+      setState(() {
+        _token = token;
+      });
+    });
+  }
+
+
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -77,7 +97,18 @@ class _ProfilePageState extends State<ProfilePage> {
                     style: Theme.of(context).textTheme.headline3,
                     textAlign: TextAlign.justify,
                   ),
-                  // SizedBox(height: 5,),
+                  // Text(
+                  //   '@${widget.username}',
+                  //   style: Theme.of(context).textTheme.subtitle1,
+                  // ),
+                  // Text(
+                  //   widget.name,
+                  //   style: Theme.of(context).textTheme.headline3,
+                  //   textAlign: TextAlign.justify,
+                  // ),
+                  // Text('Name: $name'),
+                  SizedBox(height: 5,),
+                  // Text('Username: $username'),
                   Text(
                     "@bygum_masak",
                     style: Theme.of(context).textTheme.subtitle1,
@@ -207,7 +238,9 @@ class _ProfilePageState extends State<ProfilePage> {
                                   //   onPressed: () {},
                                   //   child: Text("KELUAR", style: Theme.of(context).textTheme.button,)),
                                   child: ElevatedButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=> loginpage()));
+                                    },
                                     child: Text(
                                       "KELUAR",
                                       style: Theme.of(context).textTheme.button,
