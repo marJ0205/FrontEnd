@@ -129,6 +129,8 @@ class MyApp extends StatelessWidget {
               fontWeight: FontWeight.bold),
 
         )),
-        home: HasilBahan(judul_bahan: "Bawang",));
+        // home: HasilBahan(judul_bahan: "Bawang",)
+        home: IntroScreen(),
+        );
   }
 }
