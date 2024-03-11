@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class ListResep extends StatelessWidget {
-  final recipe_img;
+  final String recipe_img;
   final String recipe_name;
   final int number_ofCal;
   final String cooking_time;
-  final int portion;
+  final double portion;
   final String difficulty;
   final int cooking_step;
 
@@ -56,13 +56,13 @@ class ListResep extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                         child: SizedBox.fromSize(
                           size: Size.fromRadius(48),
-                          child: Image(
-                            image: recipe_img,
-                            // image: AssetImage(Tempe_Img),
+                          child: Image.network(
+                            recipe_img,
                             height: 100,
                             width: 120,
-                            fit: BoxFit.cover,
-                          ),
+                            fit: BoxFit.cover,),
+                            // image: AssetImage(Tempe_Img),
+
                         )),
                   ),
                   SizedBox(
@@ -138,7 +138,7 @@ class ListResep extends StatelessWidget {
                                   width: 3,
                                 ),
                                 Text(
-                                  portion.toString() + ' Porsi',
+                                  portion.toInt().toString() + ' Porsi',
                                   style: Theme.of(context).textTheme.bodyText2,
                                 )
                                 // SvgPicture.asset("assets/calories-svgrepo-com.svg", width: 30,)

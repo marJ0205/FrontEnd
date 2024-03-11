@@ -42,11 +42,14 @@ class _TapBarState extends State<TapBar>
                 bottomRight: Radius.circular(20))),
         leading: Container(
           margin: EdgeInsets.all(18),
-          child: Icon(
-            Icons.arrow_back_ios,
-            color: Colors.white,
-            size: 20,
-            weight: 10,
+          child: IconButton(
+            onPressed: () => Navigator.pop(context),
+            icon: Icon(
+              Icons.arrow_back_ios,
+              color: Colors.white,
+              size: 20,
+              weight: 10,
+            ),
           ),
         ),
       ),
