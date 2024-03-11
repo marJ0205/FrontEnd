@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:gabunginfrontend/pages/resep.dart';
+// import 'package:gabunginfrontend/pages/resep.dart';
 
 class artikelPage extends StatelessWidget {
   // const artikelPage({super.key});
