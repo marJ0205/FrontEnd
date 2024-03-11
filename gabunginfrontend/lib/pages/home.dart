@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:another_carousel_pro/another_carousel_pro.dart';
-import 'package:gabunginfrontend/pages/Alen/profile_page.dart/controller.dart';
+import 'package:gabunginfrontend/Alen/profile_page/controller.dart';
+// import 'package:gabunginfrontend/pages/Alen/profile_page.dart/controller.dart';
 import 'package:gabunginfrontend/pages/tapBar_search.dart';
 
 class Home extends StatefulWidget {

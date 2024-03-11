@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:gabunginfrontend/pages/change_password.dart';
 import 'package:gabunginfrontend/pages/hasil_bahan.dart';
 import 'package:gabunginfrontend/pages/home.dart';
+import 'package:gabunginfrontend/pages/intro_screen.dart';
 import 'package:gabunginfrontend/pages/list_resep.dart';
 import 'package:gabunginfrontend/pages/profile_page.dart';
+import 'package:gabunginfrontend/pages/recipe_details.dart';
 import 'package:gabunginfrontend/pages/tapBar_search.dart';
 
 // import 'package:gabunginfrontend/pages/hasil_bahan.dart';
@@ -166,7 +168,7 @@ class MMyApp extends StatelessWidget {
             fontWeight: FontWeight.bold),
       )),
       // home: HasilBahan(judul_bahan: "Bawang",)
-      home: Home(),
+      home: IntroScreen(),
     );
   }
 }

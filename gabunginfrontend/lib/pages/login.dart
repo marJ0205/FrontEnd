@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gabunginfrontend/constant/img_string.dart';
 // import 'package:gabunginfrontend/constants/img_strings.dart';
 import 'package:gabunginfrontend/pages/components/MyButton.dart';
+import 'package:gabunginfrontend/pages/home.dart';
 import 'package:gabunginfrontend/pages/profile_page.dart';
 import 'package:gabunginfrontend/pages/register.dart';
 import 'package:gabunginfrontend/pages/resep.dart';
@@ -63,7 +64,7 @@ class _loginpageState extends State<loginpage> {
         // Navigate to ProfilePage after successful login
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => ProfilePage()),
+          MaterialPageRoute(builder: (context) => Home()),
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Wrong Email or Password.")));
